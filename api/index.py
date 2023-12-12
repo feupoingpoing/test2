@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 comments = []
 
-@app.route('/index')
+@app.route('/')
 def index():
     return render_template('index.html',comments=comments)
    
